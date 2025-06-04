@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://admin-dashboard-15rx.onrender.com';
+const API_URL = 'https://admin-dashboard-15rx.onrender.com/api/auth';
 
 // Create axios instance
 const api = axios.create({
