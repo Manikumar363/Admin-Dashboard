@@ -123,8 +123,14 @@ export const RegisterForm = () => {
     },
     validationSchema,
     onSubmit: async (values) => {
-      await register(values);
-      navigate('/login');
+     console.log('Form submitted, attempting to register:', values);
+      try {
+        await register(values);
+        console.log('Registration successful, navigating to login.');
+        navigate('/login');
+      } catch (err) {
+        console.error('Registration failed:', err);
+      }
     },
   });
 
