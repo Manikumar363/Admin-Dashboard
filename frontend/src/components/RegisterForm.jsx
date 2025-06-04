@@ -246,6 +246,10 @@ export const RegisterForm = () => {
               type="password"
               id="password"
               autoComplete="new-password"
+               value={formik.values.password}
+               onChange={formik.handleChange}
+               error={formik.touched.password && Boolean(formik.errors.password)}
+               helperText={formik.touched.password && formik.errors.password}
                InputProps={{
                 startAdornment: (
                   <InputAdornment position="start" sx={{ color: mediumText }}>
