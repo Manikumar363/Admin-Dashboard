@@ -123,7 +123,7 @@ export const RegisterForm = () => {
     },
     validationSchema,
     onSubmit: async (values) => {
-     console.log('Form submitted, attempting to register:', values);
+     console.log('*** SUBMIT BUTTON CLICKED AND HANDLER STARTED ***', values);
       try {
         await register(values);
         console.log('Registration successful, navigating to login.');
