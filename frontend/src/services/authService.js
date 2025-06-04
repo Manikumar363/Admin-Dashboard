@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/auth';
+const API_URL = 'https://admin-dashboard-15rx.onrender.com';
 
 // Create axios instance
 const api = axios.create({
